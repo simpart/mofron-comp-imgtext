@@ -1,0 +1,29 @@
+{
+  "name": "mofron-comp-imgtext",
+  "version": "0.0.2",
+  "description": "image text component for mofron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpart/mofron-comp-imgtext.git"
+  },
+  "dependencies": {
+    "mofron-comp-text": "",
+    "mofron-comp-image": "",
+    "mofron-effect-synchei": "",
+    "mofron-effect-vrtpos": ""
+  },
+  "keywords": [
+    "mofron",
+    "front-end"
+  ],
+  "author": "simparts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpart/mofron-comp-imgtext/issues"
+  },
+  "homepage": "https://github.com/simpart/mofron-comp-imgtext#readme"
+}
