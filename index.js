@@ -50,26 +50,6 @@ module.exports = class extends mofron.class.Component {
 	    });
 
 	    this.child([this.image(), this.text()]);
-            
-            return;
-
-            /* set dom contents */
-            this.adom().child(
-                new mofron.Dom({
-                    tag: 'div', component: this,
-                    style: {
-		        'display'     : 'flex',
-                        'align-items' : 'center'
-	            }
-                })
-            );
-            this.child(this.image());
-            let tgt = new mofron.Dom('div', this);
-            this.target().child(tgt);
-            
-            /* default config */
-            this.text('');
-            this.size('0.25rem');
         } catch (e) {
             console.error(e.stack);
             throw e;
@@ -120,17 +100,6 @@ module.exports = class extends mofron.class.Component {
 		prm.config(cnf);
 	    }
             return this.innerComp("text", prm, Text);
-//            let buf = this.target();
-//            this.target(buf.child()[1]);
-//	    this.styleTgt(buf.child()[1]);
-//            
-//	    this.style({ "margin-left" : this.txtLeft().toString() });
-//	    let ret = super.text(prm);
-//            
-//	    this.target(buf);
-//	    this.styleTgt(buf);
-//            
-//	    return ret;
 	} catch (e) {
             console.error(e.stack);
             throw e;

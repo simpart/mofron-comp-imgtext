@@ -1,6 +1,6 @@
 {
   "name": "mofron-comp-imgtext",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "image text component for mofron",
   "main": "index.js",
   "scripts": {
