@@ -105,5 +105,30 @@ module.exports = class extends mofron.class.Component {
             throw e;
         }
     }
+
+    size (prm,img) {
+        try {
+            if (undefined === prm) {
+                return this.text().size();
+	    }
+	    this.text().size(prm);
+	    if (undefined !== img) {
+                this.image().width(img, { lock:true });
+		this.image().height(img, { lock:true });
+	    }
+	} catch (e) {
+            console.error(e.stack);
+            throw e;
+        }
+    }
+
+    mainColor (prm,opt) {
+        try {
+            return this.text().mainColor(prm,opt);
+	} catch (e) {
+            console.error(e.stack);
+            throw e;
+        }
+    }
 }
 /* end of file */
